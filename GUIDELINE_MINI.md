@@ -6,7 +6,7 @@
 
 | Lớp | Định nghĩa của bạn | Ví dụ/điểm phân biệt |
 | --- | --- | --- |
-| `car` | | |
+| `car` | xe con, sedan, SUV, taxi, xe bán tải | |
 | `truck` | | |
 | `bus` | | |
 | `van` | | |
@@ -22,6 +22,6 @@
 
 | Ảnh | Tình huống | Quyết định cuối | Lý do theo schema |
 | --- | --- | --- | --- |
-| `drive_...` | | | |
+| `drive_001` | Hai xe chồng lên nhau | vẽ hai box riêng trên phần nhìn thấy của từng xe |  |
 | `drive_...` | | | |
 | `drive_...` | | | |
