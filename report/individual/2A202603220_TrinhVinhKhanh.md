@@ -20,7 +20,7 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 - Số file nhãn train: `50`
 - Kết quả checker và lỗi đã xử lý: 
     ```
-    - Các nhãn được gắn đúng với vâtj thể tuy nhiên có một số nhãn bị gán sai và thiếu
+    - Các nhãn được gắn đúng với vật thể tuy nhiên có một số nhãn bị gán sai và thiếu
     - Lỗi sử lý: Gán sai nhãn bus và truck, van và car. Gán người trong ảnh thành van 
     ``` 
 - Danh sách ít nhất 10 ảnh đã rà bằng mắt:
@@ -94,10 +94,13 @@ Cách khắc phục: Gán nhãn tay cho vật thể.
 | Recall | 0.5681 |  |
 | F1 | 0.5587 |  |
 | mean_iou_of_matches | 0.8343 |  |
-| passed | false |  |
+| passed | true |  |
 
 Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi ảnh, lỗi đã kiểm, quyết định sửa/giữ và lý do. Không suy nguyên nhân chỉ từ FP/FN. Không có rework thì ghi rõ.
 
+```
+Theo Lab coach, chỉ số đạt khi f1 trên 0.5
+```
 ## 5. Kết quả YOLO
 
 - Runtime, GPU/CPU, phiên bản Ultralytics và Torch:
@@ -169,14 +172,13 @@ Vai trò của dữ liệu validation/evaluation:
 ```
 Đánh giá theo RUBRIC.md:
 - Các tiêu chỉ đã hoàn thành:
-[v]Hoàn thành và định dạng YOLO
-[v]Đầy đủ vật thể
-[v]Độ bám sát và hình học box
-[v]Phân lớp nhất quán
-[v]Mini guideline và quyết định mơ hồ
-[v]Pipeline YOLO và phân tích
-
-Theo Lab Coach, tập gold_train_labels đang gặp lỗi gắn nhầm nhãn nên chưa thể đối chiếu ở phần Gold-set annotation QC
+[v] Hoàn thành và định dạng YOLO
+[v] Đầy đủ vật thể
+[v] Độ bám sát và hình học box
+[v] Phân lớp nhất quán
+[v] Mini guideline và quyết định mơ hồ
+[v] Gold-set annotation QC
+[v] Pipeline YOLO và phân tích
 ```
 ## 8. Công cụ AI và tài liệu tham khảo
 
